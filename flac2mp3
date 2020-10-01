@@ -1,0 +1,1 @@
+for i in *.flac; do ffmpeg -i "$i" -c:v copy -b:a 320k "${i%.*}_out.mp3"; done
